@@ -1,0 +1,510 @@
+{
+  "data_as": "ข้อมูล ณ วันที่ {{date, DD/MM/YYYY hh:mm}}",
+  "menu": {
+    "covid_today": "Daily update",
+    "reinfected": "ReInfected",
+    "covid_map": "Interactive map of cases",
+    "covid_screening": "Screening",
+    "covid_infected": "Infected person",
+    "covid_vaccine": "Vaccinations",
+    "covid_death": "Deaths",
+    "documents": "Metrics documentation",
+    "downloads": "Download data",
+    "news": "What's new",
+    "developer": "Developer's guide",
+    "r8way": "r8way",
+    "register": "Register",
+    "login": "Login",
+    "usersmanage": "User Manage",
+    "excess_mortality": "Excess Mortality",
+    "other_disease": "Other Disease",
+    "check_data": "Check Data",
+    "logout": "Logout"
+  },
+  "chart": {
+    "today": "Today",
+    "daily": "Daily",
+    "weekly": "Weekly",
+    "7days": "7 Days",
+    "correct": "Total",
+    "table": "Data Table",
+    "latest": "Latest Data",
+    "about": "About",
+    "past7": "Past 7 days",
+    "total": "Total",
+    "grandTotal": "Grand Total",
+    "thai": "Thai",
+    "foreigner": "Foreigner",
+    "bkk": "Bkk",
+    "central": "Central",
+    "north": "North",
+    "northeast": "Northeast",
+    "south": "South",
+    "area": "Area",
+    "case": "Case",
+    "rate": "Rate per 100,000",
+    "dose1": "Dose 1",
+    "dose2": "Dose 2",
+    "booster": "Booster Dose",
+    "divideReceive": "Divide dose receive",
+    "correctReceive": "Total dose receive",
+    "date": "Date",
+    "dose1Per": "Dose1(%)",
+    "dose2Per": "Dose2(%)",
+    "boosterPer": "Booster(%)",
+    "hospital": "Hospital",
+    "change": "Change"
+  },
+  "test": {
+    "example": "Data as of {{name}}"
+  },
+  "infected": "Infected",
+  "total_administered": "Total - Administered",
+  "consent1": {
+    "header": "COVID-19 - Inform Form",
+    "for": "for User Log-in",
+    "result": {
+      "yes": "You have been informed",
+      "no": "You have not inform"
+    },
+    "btn": {
+      "cancel": "close",
+      "inform": "inform",
+      "checkbox": "I have read and agree"
+    },
+    "warning": "Please read and understand first.",
+    "c1": "The application will collect the User's personal data for the purpose of COVID control, track the user's COVID vaccination status and to keep the User informed on COVID related health risk that is personalized to their circumstances. This is done for the purpose of maintaining the personal health of the user's and the public health.",
+    "c2": "The data collected will include the User's vaccination data, their hospital information data and all COVID related diagnosis. The User's data will be used in comparison to other User's data to identify patterns in variety of factors that impact variety of COVID risks; for example, if the User is afflicted with COVID in an area where there are other Users who are afflicted with COVID, then a warning will be issued to all the Users in that area that their area is a high risk zone for COVID infection and a set of recommended actions will be issued by the application.",
+    "c3": "The application will use automated processes in the pattern recognition process in the assessment of COVID risk. The results of all automated processes will be subjected to review by a human decision-maker.",
+    "c4": "The application will keep the User's personal information anonymize at all times. Information specific to the User will be used for pattern recognition purposes, which will not be enough to infer the User's identity. Only those that need to know the User's identity in order to achieve the purpose of the application will be allow to know the identity of the owner of the personal information used, such as the User themselves or their physician in treating the User.",
+    "c5": "The application will ensure that the User's data is protected.",
+    "c6": "In cases where the data security of the application is breached, the User will be notified and provided with guidance on how to further protect themselves, how to obtain remedy or accountability for the damages caused by the breach and the improvements that will be made to prevent such a breach from occurring again.",
+    "c7": "All the information collected by the application belong to the User. The User may request that the application present all the information that they have collected on them to them in a format of their choice.",
+    "c8": "Please notify the application to correct or update inaccurate or incomplete information.",
+    "c9": "As the data collected is for the purpose of maintaining public health, the application will not be able to process the User's request to have their data deleted or for the application to stop processing the data."
+  },
+  "consent2": {
+    "header": "COVID-19 - Inform Form",
+    "for": "for Personnel Log-in",
+    "result": {
+      "yes": "You have been informed",
+      "no": "You have not inform"
+    },
+    "btn": {
+      "cancel": "close",
+      "inform": "inform",
+      "checkbox": "I have read and agree"
+    },
+    "warning": "Please read and understand first.",
+    "c1": "The application will collect the User's personal data for the purpose of COVID control, track the user's COVID vaccination status and to keep the User informed on COVID related health risk that is personalized to their circumstances. This is done for the purpose of maintaining the personal health of the user's and the public health.",
+    "c2": "The data collected will include the User's vaccination data, their hospital information data and all COVID related diagnosis. The User's data will be used in comparison to other User's data to identify patterns in variety of factors that impact variety of COVID risks; for example, if the User is afflicted with COVID in an area where there are other Users who are afflicted with COVID, then a warning will be issued to all the Users in that area that their area is a high risk zone for COVID infection and a set of recommended actions will be issued by the application.",
+    "c3": "The application will use automated processes in the pattern recognition process in the assessment of COVID risk. The results of all automated processes will be subjected to review by a human decision-maker.",
+    "c4": "The application will keep the User's personal information anonymize at all times. Information specific to the User will be used for pattern recognition purposes, which will not be enough to infer the User's identity. Only those that need to know the User's identity in order to achieve the purpose of the application will be allow to know the identity of the owner of the personal information used, such as the User themselves or their physician in treating the User.",
+    "c5": "The application will ensure that the User's data is protected. It is the personnel responsibility to ensure that the User's data is protected.",
+    "c6": "In cases where the data security of the application is breached, the personnel have a duty to rectify the breach or inform another personnel capable of rectifying the breach, inform the data protection officer and security team of the breach, inform the User of the breach and provided with guidance on how to further protect themselves, how to obtain remedy or accountability for the damages caused by the breach and the improvements that will be made to prevent such a breach from occurring again.",
+    "c7": "All the information collected by the application belong to the User. The User may request that the application present all the information that they have collected on them to them in a format of their choice. It is the personnels duty to facilitate the User's access to their personal information.",
+    "c8": "Where the personnel have been notified that there are inaccurate or incomplete information, it is the personnel's duty to confirm that the information is inaccurate or incomplete and rectify them where required as soon as possible.",
+    "c9": "Where the personnel detect any flaw or vulnerability in the system or organizational practices, the personnel have a duty to inform the data protection officer, the security team or their superior.",
+    "c10": "As the data collected is for the purpose of maintaining public health, the application and any personnel will not be able to process the User's request to have their data deleted or for the application to stop processing the data",
+    "c11": "Contact information for Application's PR or Data Protection Officer.",
+    "c12": "Responses to any complaints made by the User must be in writing. Reasoning will be given the User in written form when the User's objections are rejected by the application."
+  },
+  "pages": {
+    "home": {
+      "summary_resource_incountry": "Thailand Summary",
+      "web_description": "Thailand website for data and insights on coronavirus (COVID-19).",
+      "chart": {
+        "vac_rep": {
+          "vaccinations": "Vaccinations",
+          "population_vaccinated": "People Vaccinated",
+          "all_vaccinated": "All vaccinated",
+          "seven_day_ago": "Last 7 days",
+          "first_dose": "first dose",
+          "total_first_dose": "Total - At Least 1 Dose",
+          "second_dose": "second dose",
+          "total_second_dose": "Total - 2 Doses",
+          "booster_dose": "booster or third dose",
+          "total_booster_dose": "Total - Boosters",
+          "data_as": "On the {{date, DD/MM/YYYY hh:mm}}"
+        },
+        "covid_rep": {
+          "cased": "Cased",
+          "active_covid_cases": "People tested positive",
+          "seven_day_avg": "7d Average",
+          "per_100k": "Per 100k People",
+          "death": "Death",
+          "deaths_by_date": "Deaths within 28 days of positive test",
+          "healthcare": "Healthcare",
+          "hospital_admissions": "Patients admitted",
+          "testing": "Infection Test",
+          "covid_test_conducted": "COVID-19 Test Conducted",
+          "data_as": "ข้อมูล ณ วันที่ {{date, DD/MM/YYYY hh:mm}}"
+        }
+      }
+    },
+    "reinfected": {
+      "header": "Recurrent infections and initial infections over time by region",
+      "boxL1": "First infections",
+      "boxL2": "Recurrent infections",
+      "boxL3": "Total infection",
+      "note": "*The gray areas of the numbers and tables represent the last week in which the data still accumulated. and estimates are subject to change for the most part.",
+      "downloadBtn": "Download Re-Infection Data",
+      "update": "Update",
+      "updateValue": "{{date, D MMMM YYYY}}",
+      "views": "Views",
+      "downloadCount": "Download",
+      "dataBy": "Information By",
+      "dataByValue": "Regional Health Office 8",
+      "dataByContact": "Contact Data Owner",
+      "info": "Data set information",
+      "org": "Organization",
+      "orgName": "Ministry of public health, Regional Health Office 8",
+      "summary": "Data set summary",
+      "office": "Office/Department",
+      "officeName": "Regional Health Office 8",
+      "frequency": "Post frequency",
+      "frequencyValue": "Weekly",
+      "definition": "Definition",
+      "about": "About this information",
+      "aboutText": "Test results in Bangkok. Around the SARS-CoV2 sundown area, this week shows the information of the Regional Health Office 8 at the target point... Received a report from the hospital and clinical information throughout the area by the target. There is a claim to this wisdom. Chopping board seek advice from experts. This wisdom is a chopping board and wisdom is ... Our critics may have a 90-day warning period, which can be dangerous. May avoid copyright infringement."
+    },
+    "screening": {
+      "title": "Screening in Thailand",
+      "detail": "Screening in Thailand, Organization, SubDistrict, District, Province and Ministry",
+      "chart": {
+        "screeningReport": {
+          "title1": "Virus Screening",
+          "title2": "RT-PCR Screening",
+          "detail": "Number of confirmed positive, negative or null COVID-19 test results, classified between RT-PCR and ATK test. This counts the test results and may include tests. more than one item per The data is displayed by the numerical date that appears in the published total.",
+          "screening_results": "Virus screening results",
+          "screening_results_past7": "Virus screening results (past 7 days average)",
+          "bar":"Screening All",
+          "line":"Average past 7 days",
+          "tooltip":{
+            "date":"Date",
+            "all":"Total",
+            "lastweek":"Avg past 7d"
+          }
+        },
+        "screeningType": {
+          "name": "Screening data classified by infection test type",
+          "detail": "Number of confirmed positive, negative or null COVID-19 test results, classified between RT-PCR and ATK test. This counts the test results and may include more than one test. The data is displayed by the numerical date that appears in the published total."
+        },
+        "screeningPositive": {
+          "title1": "Infected person detected",
+          "name": "Number of infected people per day",
+          "detail": "Number of cases by sample submission date, data in the last 7 days highlighted in gray, incomplete.",
+          "screening_results": "Virus screening results",
+          "screening_results_past7": "Virus screening results (past 7 days average)",
+          "bar":"Infected All",
+          "line":"Average past 7 days",
+          "tooltip":{
+            "date":"Date",
+            "all":"Total",
+            "lastweek":"Avg past 7d"
+          }
+        },
+        "screening7days": {
+          "name": "Case of infection found 7 days according to date",
+          "detail": "Rate per 100,000 people over 7 consecutive days ending on the date shown.",
+          "tooltip":{
+            "date":"Date",
+            "t1":"Infection 7d"
+          }
+        },
+        "screeningPercent": {
+          "name": "Percent change over 7 days by date",
+          "detail": "Percentage change in rate per 100,000 people over 7 consecutive days ending in display date The percentage change is calculated by comparing the previous non-overlapping 7-day periods.",
+          "tooltip":{
+            "date":"Data",
+            "t1":"Percentage"
+          }
+        },
+        "screeningArea": {
+          "name": "Cases by area (last 7 days)",
+          "detail": "Total number of cases in the last 7 days and rates per 100,000 people. Data is displayed by date. (dates from the person taking the test) because the data by date If the information is incomplete for the most recent The numbers shown are 7 days, ending 5 days before the date the website is approved. last update The definition of a case varies from area to country."
+        },
+        "screeningRegion": {
+          "name": "Cases by region",
+          "detail": "The total number of cases since the outbreak began, and the rate per 100,000 people. Case definitions vary from area to area."
+        }
+      }
+    },
+    "infected": {
+      "title1": "Infected patients in Thailand",
+      "detail": "Infected patient within Thailand from the information detected by the government and reporting results from the public",
+      "chart": {
+        "screening_results": "Virus screening results",
+        "screening_results_past7": "Virus screening results (past 7 days average)",
+        "visit": {
+          "title1": "Patients admitted",
+          "title2": "Inpatient",
+          "title3": "Patients with ventilator",
+          "title4": "Hospitalized patients",
+          "detail": "Daily and cumulative number of COVID-19 patients admitted to hospital Information is not updated daily. The numbers can't compare correctly. Because it includes patients suspected of being infected with COVID-19. In the country only confirmed patients",
+          "bar":"Admitted",
+          "line":"Average past 7d",
+          "tooltip":{
+            "date":"Date",
+            "t1":"Total",
+            "t2":"Avg past 7d"
+          }
+        },
+        "ipd": {
+          "title": "Inpatient (hospital stay)",
+          "detail": "Number of COVID-19 patients with daily confirmed in-hospital at 8:00 a.m. and 7-day continuous average data from domestic hospitals. may not be directly comparable due to information about patients with COVID-19 In the hospital is different. The data is not reported by each hospital every day. Domestic numbers are the sum of numbers that can only be calculated when data from hospital report",
+          "bar":"COVID-19 patients",
+          "line":"COVID-19 patients (Avg 7d)",
+          "tooltip":{
+            "date":"Date",
+            "t1":"Total",
+            "t2":"Avg 7d"
+          }
+        },
+        "ventilator": {
+          "title": "Patients who are still using a ventilator",
+          "detail": "Daily number of COVID-19 cases in bed using daily ventilator and 7-day average. Domestic data may not directly comparable due to information about patients with COVID-19 In the hospital is different. each within the hospital In the country may not report data every day.",
+          "bar":"Using ventilator",
+          "line":"Using ventilator (Weekly)",
+          "tooltip":{
+            "date":"Date",
+            "t1":"Total",
+            "t2":"Avg past 7d"
+          }
+        }
+      }
+    },
+    "vaccine": {
+      "title1": "Vaccines in Thailand",
+      "detail": "Vaccines within Thailand, regional and local",
+      "title2": "All vaccinated recipients",
+      "title3": "Total vaccinated recipients",
+      "dose1": "Dose 1",
+      "dose1Average7": "Dose 1 (Avg 7)",
+      "dose2": "Dose 2",
+      "dose2Average7": "Dose 2 (Avg 7)",
+      "booster": "Booster",
+      "boosterAverage7": "Booster (Avg 7)",
+      "allDose": "All Dose",
+      "allDoseAverage7": "All Dose (Avg 7)",
+      "chart": {
+        "dose1": {
+          "title": "Dose 1 recipients",
+          "detail": "Number of people of all ages who received 1st dose of COVID-19 vaccination/mean data for 7 consecutive days",
+          "bar":"Dose 1",
+          "line":"Average 7 days",
+          "tooltip":{
+            "date":"Date",
+            "t1":"Dose 1",
+            "t2":"Avg 7d"
+          }
+        },
+        "dose2": {
+          "title": "Dose 2 recipients",
+          "detail": "Number of people of all ages who received 2nd dose of COVID-19 vaccination/mean data for 7 consecutive days",
+          "bar":"Dose 2",
+          "line":"Average 7 days",
+          "tooltip":{
+            "date":"Date",
+            "t1":"Dose 2",
+            "t2":"Avg 7d"
+          }
+        },
+        "booster": {
+          "title": "Booster recipients",
+          "detail": "Number of people of all ages who received booster dose of COVID-19 vaccination/mean data for 7 consecutive days",
+          "bar":"Booster",
+          "line":"Average 7 days",
+          "tooltip":{
+            "date":"Date",
+            "t1":"Booster",
+            "t2":"Avg 7d"
+          }
+        },
+        "latestVac": {
+          "title": "Latest vaccination report",
+          "detail": "Number of people of all ages who have been vaccinated against COVID-19 Shown as the percentage of the population aged 12+, First, Second, and Booster are displayed. The denominator is the mid-2020 population estimate. For those aged 12+, the denominator is used. They differ for the UK local area and age demographics by vaccination date, so they cannot be compared.",
+          "table":{
+            "date":"Date",
+            "c1":"% Dose1",
+            "c2":"% Dose2",
+            "c3":"% Booster"
+          }
+        },
+        "dateVac": {
+          "title": "Vaccination by reporting date",
+          "detail": "Number of people of all ages who have been vaccinated against COVID-19 Shown as the percentage of population aged 12+, first, second, and booster or third are displayed. The denominator is the mid-2020 population estimate. divide Varies for UK local areas and population by age by vaccination date. therefore cannot be compared. Percentages below 0.1 are not displayed on the chart and are shown as N/A in the data table.",
+          "d1":"Dose 1",
+          "d2":"Dose 2",
+          "d3":"Booster",
+          "tooltip":{
+            "date":"วันที่",
+            "t1":"Dose 1",
+            "t2":"Dose 2",
+            "t3":"Booster"
+          }
+        },
+        "vacDaily": {
+          "title": "Number of daily vaccinations",
+          "detail": "Number of people vaccinated against COVID-19 (including those who injected 1st, 2nd, and booster needles)",
+          "bar":"All Dose",
+          "line":"Average 7 days",
+          "tooltip":{
+            "date":"Date",
+            "t1":"Total",
+            "t2":"Avg 7d"
+          }
+        }
+      }
+    },
+    "death": {
+      "title": "Death in Thailand",
+      "detail": "Death data from COVID-19 within Thailand, at the regional level and at the local level",
+      "thaiDaily": "Thailand Daily",
+      "thai7days": "Thailand average 7 days",
+      "chart": {
+        "28days": {
+          "title1": "Died within 28 days of infection",
+          "title2": "Died of COVID-19",
+          "detail": "Number of deaths within 28 days of being diagnosed with COVID-19 with a positive test result. data from each area with different survey methods Therefore, it cannot be compared by examination. Data for the last 5 days highlighted in gray are incomplete data. Information is displayed by date of death.",
+          "tooltip":{
+            "date":"Date",
+            "t1":"Died within 28d"
+          }
+        },
+        "28Daily": {
+          "title": "Died within 28 days of daily infection.",
+          "detail": "Number of deaths within 28 days of being diagnosed with COVID-19 with a positive test result. data from each area with different survey methods therefore cannot be compared by examination. The data is displayed by the date the total was first published.",
+          "bar":"Died within 28 days",
+          "line":"Died within 28 days (Weekly)",
+          "tooltip":{
+            "date":"Date",
+            "t1":"Died 28d",
+            "t2":"Died Avg 7d"
+          }
+        },
+        "28DailyArea": {
+          "title": "Data by area of death within 28 days of infection",
+          "detail": "The total number of deaths within 28 days of being diagnosed with COVID-19 with a positive test result since the outbreak began. area information by each area used different survey methods Therefore, it cannot be directly compared.",
+          "table":{
+            "c1":"Area",
+            "c2":"Number of cases",
+            "c3":"Rate per 100,000 inhabitants"
+          }
+        }
+      }
+    },
+    "excess_mortality": {
+      "header": "Excess Mortality",
+      "chart": {
+        "header": "Excess Mortality Rate",
+        "detail": "All-cause mortality compared to forecasts based on the previous year. The percentage difference between weekly or monthly deaths reported in 2020-2022 and projected deaths for the same period based on the previous year. The reported number may not count all the deaths that occurred. due to incomplete reports and delays in reporting"
+      },
+      "source": {
+        "header": "Source",
+        "title": "Description of the information provided",
+        "s": "Source",
+        "ss": "Ministry of Health, R8way",
+        "r": "Data interval",
+        "rr": "September 4, 2022",
+        "u": "Latest update",
+        "uu": "September 4, 2022",
+        "detail1": "This information is in the project. Research and development of database and information systems for managing COVID-19 and supporting the ideal new incidence of disease.",
+        "detail2": "by this project Created to develop a prototype database and information system for managing COVID-19 and supporting the ideal new incidence of disease. to collect relevant information that is already available to the public health service integrate together Show information about COVID-19 And the coverage of vaccinations in real time on the Dashboard is linked to the relevant departments to make decisions."
+      }
+    },
+    "other_disease":{
+      "title":"Other diseases for comparison",
+      "desc":"Death data from COVID-19 within Thailand, at the regional level and at the local level",
+      "filter":{
+        "a":"Disease",
+        "d":"Dengue",
+        "c":"Covid-19"
+      },
+      "chart":{
+        "title":"Disease information",
+        "d":"Dengue",
+        "c":"Covid-19",
+        "date":"Date",
+        "dateValue":"{{date, MMM YYYY}}"
+      },
+      "table":{
+        "title1":"Disease cases by region : Dengue",
+        "title2":"Disease cases by region : Covid-19",
+        "desc":"The total number of cases since the outbreak began, and the rate per 100,000 people. Case definitions vary from area to area.",
+        "c1":"พื้นที่",
+        "c2":"จำนวนเคส",
+        "c3":"อัตราต่อประชากร 100,000 คน"
+      }
+    },
+    "profile": {
+      "profile_header": "Personal Information",
+      "name": "Name",
+      "position": "Position",
+      "department": "Department",
+      "tambon": "Sub District",
+      "amphur": "District",
+      "changwat": "Province",
+      "cid": "Citizen ID",
+      "email": "Email",
+      "mobile": "Mobile Phone",
+      "editProfile": "Edit"
+    },
+    "user_manage": {
+      "header": "User Management",
+      "detail": "User data comes from R8Anywhere",
+      "tab1": "Approve pending",
+      "tab2": "All User",
+      "col1": "Name",
+      "col2": "Email",
+      "col3": "Department",
+      "col4": "District",
+      "col5": "Role",
+      "col6": "Manage",
+      "roleBtn": "Assign Role",
+      "delBtn": "Delete User",
+      "modal": {
+        "header": "Assign Role",
+        "role": {
+          "Organization": "Executive",
+          "AdminR8": "Administrator",
+          "Officer": "Officer"
+        },
+        "btn": {
+          "cancel": "close",
+          "save": "Save"
+        }
+      }
+    }
+  },
+  "filter": {
+    "ex": {
+      "organization": {
+        "label": "Organization",
+        "placeholder": "Select organization"
+      },
+      "province": {
+        "label": "Province",
+        "placeholder": "Select province"
+      }
+    },
+    "gb": {
+      "province": {
+        "label": "Privince",
+        "placeholder": "All Province"
+      },
+      "district": {
+        "label": "District",
+        "placeholder": "All District"
+      },
+      "subdistrict": {
+        "label": "SubDistrict",
+        "placeholder": "All SubDistrict"
+      },
+      "organization": {
+        "label": "Organization",
+        "placeholder": "All organization"
+      }
+    }
+  }
+}

@@ -1,0 +1,123 @@
+import { MapContainer, TileLayer, GeoJSON, LayersControl } from 'react-leaflet';
+import 'leaflet/dist/leaflet.css';
+import districts from 'src/constants/geo/province_wgs84_z47_006.json';
+import amppart from 'src/constants/geo/amphur_wgs84_z47_006.json';
+
+// import districts from 'src/constants/geo/example.json';
+import { useState, useRef, useEffect } from 'react';
+
+const position: any = [13, 101];
+
+export default function ReactLeaflet(props: any) {
+  const [map, setMap]: any = useState({});
+  const [mapZoom, setMapZoom]: any = useState(5);
+  const [mapData, setMapData]: any = useState(districts);
+  const geojsonRef: any = useRef();
+
+  const [featureId, setFeatureId]: any = useState(null);
+
+  const handleEachFeature = (feature: any, layer: any) => {
+    layer.on({
+      click: (e: any) => {
+        setFeatureId(feature.properties.PROV_CODE);
+
+        if (feature.properties.PROV_CODE == featureId) {
+          setFeatureId(null);
+        }
+
+        if (props.onChangwatClick) {
+          props.onChangwatClick(feature.properties.PROV_CODE);
+        }
+
+        // map.fitBounds(e.target.getBounds());
+        console.log('mapRef.current', e.target);
+        console.log('mapRef.current', map);
+        console.log('geojsonRef.current', geojsonRef.current);
+        layer.redraw();
+      },
+      ready: () => {
+        console.log('ready');
+      },
+      dblclick: (e: any) => {
+        const dbl = {
+          features: districts.features.filter((x: any) => x.properties.PROV_CODE === feature.properties.PROV_CODE),
+          type: 'FeatureCollection',
+        };
+        setMapData(dbl);
+        e.target.setStyle({
+          color: 'yellow',
+        });
+
+        const ampData = {
+          features: amppart.features.filter((x: any) => x.properties.PROV_CODE === feature.properties.PROV_CODE),
+          type: 'FeatureCollection',
+        };
+
+        geojsonRef.current.clearLayers();
+        geojsonRef.current.addData(ampData);
+
+        setMapZoom(13);
+        // console.log('ampData', ampData);
+      },
+    });
+    layer.setStyle({
+      fillOpacity: 1,
+      weight: 1,
+      color: 'white',
+      fillColor: Math.random() > 0.5 ? '#c71002' : '#c71002',
+      stroke: true,
+      strokeColor: 'black',
+    });
+  };
+
+  useEffect(() => {
+    if (!featureId || !geojsonRef.current) return;
+    geojsonRef.current.eachLayer((layer: any) => {
+      layer.setStyle({
+        fillOpacity: 0.5,
+        weight: 1,
+        color: 'white',
+        fillColor: Math.random() > 0.5 ? '#c71002' : '#c71002',
+        stroke: true,
+        strokeColor: 'black',
+      });
+    }); // inherited from LayerGroup
+
+    const newDistricts = districts.features.filter((district: any) => {
+      return district.properties.PROV_CODE === featureId;
+    });
+
+    geojsonRef.current.addData(newDistricts);
+  }, [featureId]);
+
+  const options = {
+    doubleClickZoom: false,
+    closePopupOnClick: false,
+    dragging: false,
+    trackResize: false,
+    touchZoom: false,
+    scrollWheelZoom: false,
+    zoomControl: false,
+    attributionControl: false,
+    onEachFeature: () => handleEachFeature,
+  };
+
+  console.log('RENDER', mapData);
+
+  // const TEST: any = {
+  //   features: mapData.features.filter((x: any) => x.properties.PROV_CODE === '57'),
+  //   type: 'FeatureCollection',
+  // };
+
+  return (
+    <MapContainer
+      {...options}
+      center={position}
+      zoom={mapZoom}
+      ref={setMap}
+      // attributionControl={false}
+      style={{ height: 400, width: 400, backgroundColor: 'white' }}>
+      {map && <GeoJSON ref={geojsonRef} data={mapData} onEachFeature={handleEachFeature} />}
+    </MapContainer>
+  );
+}

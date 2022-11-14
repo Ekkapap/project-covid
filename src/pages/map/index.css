@@ -1,0 +1,29 @@
+table.table-covid-map-desc {
+  width: 100%;
+}
+
+table.table-covid-map-desc, tr td {
+  border: 1px solid black;
+  font-size: 10px;
+}
+
+table.table-covid-map-desc > thead tr td {
+  font-size: 1em;
+  text-align: center;
+  font-weight: bold;
+}
+table.table-covid-map-desc > tbody > tr > td {
+  padding-left:10px;
+}
+table.table-covid-map-desc > tbody > tr.green {
+  background-color:green
+}
+table.table-covid-map-desc > tbody > tr.yellow {
+  background-color:yellow
+}
+table.table-covid-map-desc > tbody > tr.orange {
+  background-color:orange
+}
+#map .ant-card-body {
+  padding: 18px;
+}

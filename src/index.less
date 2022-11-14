@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont,
+    'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+code {font-family: source-code-pro, 'Menlo', 'Monaco', Consolas,'Courier New', monospace;}
+
+
+// -------------- Custom Color --------------
+// Simple Link
+a, .ant-btn-link {
+  color: #0082d9;
+  font-weight: 500;
+}
+a:hover, .ant-btn.ant-btn-link:hover,
+.ant-btn-link:focus,.ant-btn-link:active { 
+  color: #01abda !important;
+}
+// Sider Menu
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+	background-color: #e4f5ff;
+  color: #1c58a5;
+}
+.ant-menu-item:hover,
+.ant-menu-item-active,
+.ant-menu-item span:hover,
+.ant-menu-item a:hover,
+.ant-menu-item-selected a,
+.ant-menu-item-selected a:hover{
+  color: #1c58a5 !important;
+}
+// Radio Group
+.ant-radio-checked .ant-radio-inner {
+  border-color: #1c58a5 !important ;
+}
+.ant-radio-checked .ant-radio-inner:after {
+  background-color: #1c58a5;
+}
+.ant-radio:hover .ant-radio-inner {
+  border-color: #1c58a5;
+}
+
+// Pagination
+.ant-pagination{
+  display: flex;
+  align-items: center;
+}
+.ant-pagination-item a {
+  color: #000;
+  font-size: 14px;
+}
+.ant-pagination-item-active a {
+  color: #0082d9;
+  font-size: 14px;
+}
+.ant-pagination-item-active {
+  background: unset;
+  border: unset;
+  background-color: #d1def8;
+}
+.ant-pagination-item-link:hover,
+.ant-pagination-item-link span:hover,
+.ant-pagination-prev:hover,
+.ant-pagination-next:hover{
+  color: #0082d9;
+}
+.ant-pagination-options .ant-select-selector{
+  font-size: 14px;
+}
+.ant-select:not(.ant-select-customize-input) .ant-select-selector {
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+}
+.ant-pagination .ant-select-item-option {font-size: 14px;}
+.ant-btn-primary {
+	background-color: #0082d9 !important;
+	border-color: #0082d9 !important;
+	text-shadow: none;
+}
+.ant-btn-dashed:hover, .ant-btn-dashed:focus {
+  color: #0082d9;
+  border-color: #0082d9;
+  background: #fff;
+}

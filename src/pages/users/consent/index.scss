@@ -1,0 +1,63 @@
+// Register
+#register .ant-modal-title {
+	font-weight: bold;
+}
+
+#register .ant-form-item-label>label {
+	font-size: 15px;
+}
+
+#register .ant-form-item-label {
+	padding: 0 !important;
+}
+
+#register .ant-row {
+	margin: 0 0 6px 0;
+}
+
+#register input {
+	font-size: .8em;
+}
+
+#register input::placeholder {
+	font-size: .8em;
+}
+
+#register .ant-select-selection-placeholder {
+	font-size: .1em;
+}
+
+#register .ant-form-item-explain-error {
+	font-size: .7em;
+}
+
+#register .ant-input-status-error:not(.ant-input-disabled):not(.ant-input-borderless).ant-input,
+#register .ant-input-status-error:not(.ant-input-disabled):not(.ant-input-borderless).ant-input:hover {
+	background: #fff;
+	border-color: #ff4d4f;
+}
+
+#register .ant-input-status-success:not(.ant-input-disabled):not(.ant-input-borderless).ant-input,
+#register .ant-input-status-success:not(.ant-input-disabled):not(.ant-input-borderless).ant-input:hover {
+	background: #fff;
+	border-color: #52d406 !important;
+}
+
+.ant-input:focus,
+.ant-input-focused,
+.ant-select:focus,
+.ant-select-focused {
+	border-color: #ccc;
+	box-shadow: unset;
+}
+
+#register .ant-select-selection-item {
+	font-size: 1em;
+}
+
+.ant-btn-primary[disabled],
+.ant-btn-primary[disabled]:hover,
+.ant-btn-primary[disabled]:focus,
+.ant-btn-primary[disabled]:active {
+	color: gainsboro;
+}

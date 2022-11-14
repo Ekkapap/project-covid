@@ -1,0 +1,28 @@
+.proLabel{
+  background: rgba(255, 255, 255, 0);
+  border:0;
+  border-radius:0px;
+  box-shadow: 0 0px 0px;
+}
+.ampLabel{
+  background: rgba(255, 255, 255, 0);
+  border:0;
+  border-radius:0px;
+  box-shadow: 0 0px 0px;
+}
+.tamLabel{
+  background: rgba(255, 255, 255, 0);
+  border:0;
+  border-radius:0px;
+  box-shadow: 0 0px 0px;
+}
+
+.proLabelFocus {
+  background: rgb(255, 255, 255)
+}
+.ampLabelFocus {
+  background: rgb(255, 255, 255)
+}
+.tamLabelFocus {
+  background: rgb(255, 255, 255)
+}

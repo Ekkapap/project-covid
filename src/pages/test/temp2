@@ -1,0 +1,125 @@
+import { MapContainer, GeoJSON } from 'react-leaflet';
+import { useState, useRef, useEffect } from 'react';
+import { Button } from '@material-ui/core';
+
+import { PROVINCE } from 'src/constants/geo/province_wgs84_z47_006';
+import level1 from 'src/constants/geo/amphur_wgs84_z47_006.json';
+
+import 'leaflet/dist/leaflet.css';
+
+const position: any = [13, 101];
+
+interface IProps {
+  onChangwatClick: (chwpart: string) => void;
+}
+
+export default function ReactLeaflet(props: IProps) {
+  const [map, setMap]: any = useState(null);
+  const [mapDistLevel, setMapDistLevel]: any = useState(0);
+
+  const [mapZoom, setMapZoom]: any = useState(5);
+  const [mapData, setMapData]: any = useState(PROVINCE);
+  const geojsonRef: any = useRef();
+
+  const [featureId, setFeatureId]: any = useState(null);
+
+  const handleEachFeature = (feature: any, layer: any) => {
+    layer.on({
+      click: (e: any) => {
+        setFeatureId(feature.properties.P_CODE);
+
+        if (feature.properties.P_CODE == featureId) {
+          setFeatureId(null);
+        }
+
+        if (props.onChangwatClick) {
+          props.onChangwatClick(feature.properties.PROV_CODE);
+        }
+      },
+      ready: () => {
+        // console.log('ready');
+      },
+      dblclick: (e: any) => {
+        e.target.setStyle({
+          color: 'yellow',
+        });
+
+        // setMapLevel(1 + mapLevel);
+
+        // console.log('DOUBLE', mapLevel);
+
+        const ampData = {
+          features: level1.features.filter((x: any) => x.properties.P_CODE === feature.properties.P_CODE),
+          type: 'FeatureCollection',
+        };
+
+        setMapData(ampData);
+        geojsonRef.current.clearLayers();
+        geojsonRef.current.addData(ampData);
+        map.fitBounds(e.target.getBounds());
+        // setMapZoom(13);
+      },
+    });
+    layer.setStyle({
+      fillOpacity: 1,
+      weight: 1,
+      color: 'white',
+      fillColor: Math.random() > 0.5 ? '#c71002' : '#c71002',
+      stroke: true,
+      strokeColor: 'black',
+    });
+  };
+
+  useEffect(() => {
+    if (!featureId || !geojsonRef.current) return;
+    // console.log('mapLevel', mapLevel);
+    geojsonRef.current.eachLayer((layer: any) => {
+      layer.setStyle({
+        fillOpacity: 0.5,
+        weight: 1,
+        color: 'white',
+        fillColor: Math.random() > 0.5 ? '#c71002' : '#c71002',
+        stroke: true,
+        strokeColor: 'black',
+      });
+    }); // inherited from LayerGroup
+
+    const newDistricts = PROVINCE.features.filter((district: any) => {
+      return district.properties.P_CODE === featureId;
+    });
+
+    geojsonRef.current.addData(newDistricts);
+  }, [featureId]);
+
+  const options = {
+    doubleClickZoom: false,
+    closePopupOnClick: false,
+    dragging: true,
+    trackResize: false,
+    touchZoom: false,
+    scrollWheelZoom: false,
+    zoomControl: false,
+    attributionControl: false,
+    // onEachFeature: () => handleEachFeature,
+  };
+
+  // const TEST: any = {
+  //   features: mapData.features.filter((x: any) => x.properties.P_CODE === '57'),
+  //   type: 'FeatureCollection',
+  // };
+
+  return (
+    <MapContainer
+      {...options}
+      center={position}
+      zoom={mapZoom}
+      whenCreated={setMap}
+      // attributionControl={false}
+      style={{ height: 400, width: 400, backgroundColor: 'white' }}>
+      <Button variant='contained' style={{ zIndex: 999 }} size='small'>
+        X:
+      </Button>
+      {map && <GeoJSON ref={geojsonRef} data={mapData} onEachFeature={handleEachFeature} />}
+    </MapContainer>
+  );
+}

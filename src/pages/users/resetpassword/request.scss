@@ -1,0 +1,56 @@
+// Register
+#requestResetPassword .ant-modal-title {
+	font-weight: bold;
+}
+
+#requestResetPassword .ant-form-item-label>label {
+	font-size: 15px;
+}
+
+#requestResetPassword .ant-form-item-label {
+	padding: 0 !important;
+}
+
+#requestResetPassword .ant-row {
+	margin: 0 0 6px 0;
+}
+
+#requestResetPassword input {
+	font-size: .9em;
+}
+
+#requestResetPassword input::placeholder {
+	font-size: .8em;
+}
+
+#requestResetPassword .ant-select-selection-placeholder {
+	font-size: .9em;
+}
+
+#requestResetPassword .ant-form-item-explain-error {
+	font-size: .7em;
+}
+
+#requestResetPassword .ant-input-status-error:not(.ant-input-disabled):not(.ant-input-borderless).ant-input,
+#requestResetPassword .ant-input-status-error:not(.ant-input-disabled):not(.ant-input-borderless).ant-input:hover {
+	background: #fff;
+	border-color: #ff4d4f;
+}
+
+#requestResetPassword .ant-input-status-success:not(.ant-input-disabled):not(.ant-input-borderless).ant-input,
+#requestResetPassword .ant-input-status-success:not(.ant-input-disabled):not(.ant-input-borderless).ant-input:hover {
+	background: #fff;
+	border-color: #52d406 !important;
+}
+
+#requestResetPassword .ant-input:focus,
+.ant-input-focused,
+.ant-select:focus,
+.ant-select-focused {
+	border-color: #ccc;
+	box-shadow: unset;
+}
+
+#requestResetPassword .ant-select-selection-item {
+	font-size: 0.9em;
+}

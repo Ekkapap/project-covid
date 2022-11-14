@@ -1,0 +1,127 @@
+#login {
+	// width: 280px;
+}
+.main {
+	height:100vh;
+	display:flex;
+	justify-content: center;
+	align-items:center;
+}
+.main .header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 1.5rem;
+	font-size: 1rem;
+	font-weight: bold;
+	color: #d2d2d2;
+}
+.main .content {
+	display:flex;
+	justify-content: center;
+	align-items:center;
+}
+
+#login form .ant-col>span {
+	background-color: #363b41;
+	border-radius: 3px 0px 0px 3px;
+	color: #b3b6b8;
+	display: block;
+	float: left;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	width: 50px;
+}
+
+#login form input {
+	height: 50px;
+}
+
+#login form input[type="email"], input[type="password"] {
+	background-color: #3b4148;
+	border-radius: 0px 3px 3px 0px;
+	color: #b3b6b8;
+	margin-bottom: 1em;
+	padding: 0 16px;
+	width: 230px;
+}
+#login form input::placeholder{
+  color: rgb(189, 189, 189)  !important;
+  opacity: 1 !important;
+}
+
+#login form input[type="submit"], .loginBtn[type="submit"] {
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	background-color: #1e75e7 !important;
+	color: #eee !important;
+	font-weight: bold;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	width: 280px;
+	border: none;
+	font-family: "Open Sans", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.5em;
+	padding: 0;
+	-webkit-appearance: none;
+	height: 50px;
+}
+
+#login form input[type="submit"]:hover {
+	background-color: #d44179;
+}
+
+#login > p {
+	text-align: center;
+}
+
+#login > p span {
+	padding-left: 5px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active,
+input:-internal-autofill-selected,
+input:-internal-autofill-previewed {
+	-webkit-transition-delay: 9999s;
+  transition-delay: 9999s;
+	color: #b3b6b8 !important;
+	background-image: none !important;
+	background-color: #3b4148 !important;
+}
+span.ant-input-affix-wrapper{
+	padding: 0;
+	border: none;
+	background-color: transparent;
+}
+.ant-input-affix-wrapper > span{
+	background-color: #363b41;
+	border-radius: 3px 0px 0px 3px;
+	color: #b3b6b8;
+	display: block;
+	float: left;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	width: 50px;
+}
+.ant-input-prefix {
+	margin-right: 0;
+}
+.ant-input-affix-wrapper > input{
+	background-color: #3b4148;
+	border-radius: 0px 3px 3px 0px;
+	color: #b3b6b8;
+	margin-bottom: 1em;
+	padding: 0 16px !important;
+	width: 230px;
+	font-size: 14px;
+}
+.ant-row.ant-form-item{
+ margin-bottom:0;
+}
